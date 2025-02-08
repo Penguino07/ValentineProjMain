@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations":[
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch index.html in Opera",
+            "file": "${workspaceFolder}/index.html",
+            "runtimeExecutable": "c:\\Users\\mprif\\AppData\\Local\\Programs\\Opera GX\\opera.exe"
+        }
+    ]
+}
+

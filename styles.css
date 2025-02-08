@@ -1,0 +1,54 @@
+body{
+    background-color: #020202;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(248, 6, 6);
+}
+
+.intro{
+    animation: fadeIn 4s linear;
+}
+
+body {
+    
+    color: rgb(248, 6, 6);
+    text-align: center;
+    padding: 1rem;
+}
+
+.box img {
+    opacity: 0;
+}
+
+
+    @keyframes fadeIn {
+        0%{
+            opacity: 0;
+        }25%{
+            opacity: 0.25;
+        }50%{
+            opacity: 0.5;
+        }75%{
+            opacity: 0.75;
+        }100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes test {
+        0% {
+            
+            transform: translateY(100px);
+        }
+        50% {
+           
+            transform: translateY(50px);
+        }
+        100% {
+            
+            transform: translateY(0);
+        }
+        
+    }
