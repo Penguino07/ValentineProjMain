@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("Box clicked 3 times!");
             // Add your event logic here
             // For example, you can change the image or display a message
-            box.src = "pictures/AnotherImage.png"; // Change the image
+            box.src = "pictures/Designer2.png"; // Change the image
             
         }
         console.log("Box clicked " + clickCount + " times");
