@@ -30,6 +30,7 @@ body {
 }
 
 .mizuki img{
+    scale: auto;
     position: absolute;
     top: 10%;
     left: 46.7%;
@@ -51,6 +52,68 @@ body {
     left: 52.5%;
 }
 
+.thank{
+    opacity: 0; 
+    top: 14%;
+    left: 57.7%;
+    position: absolute;
+}
+
+.button1, .button2 {
+    opacity: 0; /* Initially hidden */
+    display: "none";
+    margin: 10px;
+}
+
+.confetti img, .confetti2 img, .confetti3 img, .confetti4 img{
+    display: none;
+    opacity: 0; /* Initially hidden */
+    
+    width: 100px;
+    height: 25px;
+}
+
+.button2 button {
+    position: absolute;
+    top: 43%;
+    left: 52%;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #ff96cb;
+    border: 2px solid #d60b77;
+    color: #f80606;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.button1 button {
+
+    position: absolute;
+    top: 43%;
+    left: 44%;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #ff96cb;
+    border: 2px solid #d60b77;
+    color: #f80606;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.button2 button:hover{
+    background-color: #ff1993;
+    color: white;
+}
+
+.button1 button:hover  {
+    background-color: #ff1993;
+    color: white;
+}
+
 .box img {
     position: absolute;
     top: 5%;
@@ -59,7 +122,11 @@ body {
 }
 
 .question h2{
-    
+    opacity: 0; /* Initially hidden */
+    position: absolute;
+    text-size-adjust: 0%;
+    top: 14%;
+    left: 54.7%;
 }
 
 @keyframes zoomIn {
@@ -152,4 +219,20 @@ body {
     }
 }
 
+@keyframes spinClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
+@keyframes spinCounterClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}

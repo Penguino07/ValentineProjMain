@@ -85,10 +85,69 @@ document.addEventListener("DOMContentLoaded", function() {
         txt.style.animation = "fadeIn 2s linear";
         setTimeout(function() {
             txt.style.display = "none";
+            speech2();
         }, 2000);
     }
-
+    
+    const ques = document.querySelector(".question h2");
     function speech2(){
         
+        const yes = document.querySelector(".button1");
+        const no = document.querySelector(".button2");
+        console.log(ques);
+        console.log(yes);
+        console.log(no);
+        ques.style.animation = "fadeIn 2s linear";
+        ques.style.opacity = "1";
+        setTimeout(function() {
+            yes.style.animation = "fadeIn 2s linear";
+            yes.style.opacity = "1";
+            no.style.animation = "fadeIn 2s linear";
+            no.style.opacity = "1";
+        }, 2000);
     }
+    
+    window.handleYes = function() {
+        alert("Thank you! Happy Valentine's Day Sarah!");
+        const mizuki = document.querySelector(".mizuki img");
+        const thank = document.querySelector(".thank");
+        const btn1 = document.querySelector(".button1");
+        const btn2 = document.querySelector(".button2");
+        console.log(btn1);
+        console.log(btn2);
+        console.log(thank);
+        ques.style.display = "none";
+        thank.style.opacity = "1";
+        setTimeout(function() {
+            btn1.style.display = "none";
+            btn2.style.display = "none";
+            mizuki.src = "pictures/happyplush.png"
+            mizuki.style.width = "175px";
+            mizuki.style.height = "175px";
+            mizuki.style.top = "20%";
+            celebrate();
+        }, 0);
+    }
+
+    function celebrate(){
+        const confettiImages = document.querySelectorAll(".confetti img, .confetti2 img, .confetti3 img, .confetti4 img");
+        
+        for(var i = 0; i < confettiImages.length; i++){
+            console.log(confettiImages[i]); 
+            confettiImages[i].style.display = "block";
+            confettiImages[i].style.opacity = "1";
+        }
+    }
+
+
+    window.handleNo = function() {
+        var arr = ["please?", "pretty please?", "reconsider!", 
+            "youll get Perfect on every song if you say yes!", "no?", 
+            "sigh...", 
+            "trust me this coding stuff is time consuming", "please i'll make karla leave you alone💔"]
+        
+        var random = Math.floor(Math.random() * arr.length);
+        alert(arr[random]);
+    }
+
 });
