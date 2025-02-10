@@ -29,11 +29,83 @@ body {
     padding: 1rem;
 }
 
+.mizuki img{
+    position: absolute;
+    top: 10%;
+    left: 46.7%;
+}
+
+.talk h2 {
+    opacity: 0; /* Initially hidden */
+    font-size: 1.5rem;
+    position: absolute;
+    text-size-adjust: 0%;
+    top: 12%;
+    left: 54.7%;
+    color: rgb(0, 0, 0);
+}
+
+.speechBubble img{
+    opacity: 0; /*Initially hidden*/
+    position: absolute;
+    left: 52.5%;
+}
+
 .box img {
     position: absolute;
     top: 5%;
     left: 36%;
     opacity: 0; /* Initially hidden */
+}
+
+.question h2{
+    
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    75% {
+        transform: scale(1.75);
+    }
+    100% {
+        transform: scale(2);
+    }
+    
+}
+
+@keyframes moveMizuki {
+    from{
+        top:10%;
+    }to{
+        top: 25%;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 0;
+    }
+    
 }
 
 @keyframes fadeIn {
@@ -80,6 +152,4 @@ body {
     }
 }
 
-.shake {
-    animation: shake 0.5s;
-}
+
