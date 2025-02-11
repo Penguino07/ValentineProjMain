@@ -64,9 +64,14 @@ document.addEventListener("DOMContentLoaded", function() {
         mizuki.style.animation = "moveMizuki 2s linear";
         console.log("Mizuki is moving");
         setTimeout(function() {
-            background.style.backgroundColor = "pink";
+            //background.style.backgroundColor = "pink";
+            background.style.background = "url('pictures/background2.png')";
+            //background.style.backgroundImage = "pictures/background.png";
+            background.style.backgroundSize = "cover";
+            background.style.backgroundPosition = "0px 0px";
+            background.style.backgroundRepeat = "no-repeat";
             mizuki.style.animation = "";
-            mizuki.style.top = "25%";
+            mizuki.style.top = "45%";
             txt1.innerHTML = "========================HAPPY VALENTINES DAY!========================";
             txt2.innerHTML = "========================HAPPY VALENTINES DAY!========================";
             txt3.innerHTML = "";
@@ -78,9 +83,12 @@ document.addEventListener("DOMContentLoaded", function() {
         const speech = document.querySelector(".speechBubble img");
         const txt = document.querySelector(".talk h2");
         console.log(txt);
+        //txt.style.top = "45%";
+        
         speech.style.display = "block";
         speech.style.animation = "fadeIn 1s linear";
         speech.style.opacity = "1";
+        speech.style.top = "30%";
         txt.style.opacity = "1";
         txt.style.animation = "fadeIn 2s linear";
         setTimeout(function() {
@@ -124,19 +132,19 @@ document.addEventListener("DOMContentLoaded", function() {
             mizuki.src = "pictures/happyplush.png"
             mizuki.style.width = "175px";
             mizuki.style.height = "175px";
-            mizuki.style.top = "20%";
+            mizuki.style.top = "45%";
             celebrate();
         }, 0);
     }
 
     function celebrate(){
-        const confettiImages = document.querySelectorAll(".confetti img, .confetti2 img, .confetti3 img, .confetti4 img");
-        
-        for(var i = 0; i < confettiImages.length; i++){
-            console.log(confettiImages[i]); 
-            confettiImages[i].style.display = "block";
-            confettiImages[i].style.opacity = "1";
-        }
+        const confetti1 = document.querySelector(".confetti img");
+        const confetti2 = document.querySelector(".confetti2 img");
+        console.log(confetti1);
+        confetti1.style.display = "block";
+        confetti1.style.opacity = "1";
+        confetti2.style.display = "block";
+        confetti2.style.opacity = "1";
     }
 
 
